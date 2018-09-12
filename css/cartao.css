@@ -60,7 +60,7 @@
 
 	.cartao {
 		flex-grow: 1;
-		display: inline-block;
+		/*display: inline-block;*/
 		text-align: left;
 		box-sizing: border-box;
 		vertical-align: top;
