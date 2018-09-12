@@ -2,7 +2,7 @@
 (function(){
 
     //localizamos em quem queremos adicionar uma funcionalidade
-    const btnRemoveCard = document.querySelectorAll('.opcoesDoCartao-remove');
+    const btnsRemoveCard = document.querySelectorAll('.opcoesDoCartao-remove');
 
     //funcao adiciona classe com a transition
     function addClassCard(){
@@ -17,14 +17,15 @@
     }
 
     //pega todos os botões e adiciona as funçẽos
-    for(let i = 0; i < btnRemoveCard.length; i++){
+    for(let i = 0; i < btnsRemoveCard.length; i++){
         //funcao adiciona a classe
-        btnRemoveCard[i].addEventListener('click', addClassCard);
+        btnsRemoveCard[i].addEventListener('click', addClassCard);
 
         //funcao remove o card
-        btnRemoveCard[i].addEventListener('click', removeCard);
+        btnsRemoveCard[i].addEventListener('click', removeCard);
     }
 
+        //novo escutador de evento do css(transitionend) para o js 
         /*btn.addEventListener('transitionend', function(){
             this.parentElement.parentElement.remove();
         })*/
