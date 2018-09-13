@@ -5,6 +5,16 @@
 	left: 0;
 	transform: translate(-1em, -50%);
 	white-space: nowrap;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.opcoesDoCartao label{
+	cursor: pointer;
+}
+
+.cartao:hover .opcoesDoCartao{
+	opacity: 1;
 }
 
 .opcoesDoCartao-opcao {
