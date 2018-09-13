@@ -10,6 +10,7 @@
     }
 
     //remove card
+    //função de callback - É uma função que aguarda para ser chamada depois (voltar)
     function removeCard(){
         setTimeout(() => {
             this.parentElement.parentElement.remove();
