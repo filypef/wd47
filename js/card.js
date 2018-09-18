@@ -31,6 +31,12 @@
             }
         })
 
+        card.addEventListener('keydown', function(e){
+            if(e.code == 'Enter'){
+                e.target.click();
+            }
+        })
+
         //Adiciona classe some na div para remover
         function addClassCard(btnRemove){
             btnRemove.parentElement.parentElement.classList.add('cartao--some');

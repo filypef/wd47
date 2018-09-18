@@ -6,18 +6,13 @@
 	transform: translate(-1em, -50%);
 	white-space: nowrap;
 	opacity: 0;
-	visibility: hidden;
-	transition: opacity 1s ease;
+	pointer-events: none;
 }
 
-.opcoesDoCartao label{
-	cursor: pointer;
-}
-
-.cartao--focado .opcoesDoCartao,
-.cartao:hover .opcoesDoCartao{
+.cartao:hover .opcoesDoCartao,
+.cartao--focado .opcoesDoCartao {
 	opacity: 1;
-	visibility: visible;
+	pointer-events: all;
 }
 
 .opcoesDoCartao-opcao {

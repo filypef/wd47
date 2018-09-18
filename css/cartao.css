@@ -13,7 +13,7 @@
 
 .cartao--some {
 	opacity: 0;
-	transition: 0.5s;
+	transition: .5s;
 }
 
 .cartao.cartao--focado,
@@ -60,7 +60,7 @@
 
 	.cartao {
 		flex-grow: 1;
-		/*display: inline-block;*/
+		display: inline-block;
 		text-align: left;
 		box-sizing: border-box;
 		vertical-align: top;
