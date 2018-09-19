@@ -1,7 +1,15 @@
-function createNewCard(content){
+function createNewCard(objetoCard){
+    
     let article = document.querySelectorAll('.mural > article').length;
 
-    const card  = createCard(content);
+    let card;
+
+    if(typeof(objetoCard) === 'object'){
+        card  = createCard(objetoCard.text, objetoCard.color);
+    }else{
+        card  = createCard(objetoCard, 'yellow');
+    }
+    
     addCardMural(card);
 
     //adiciona classe cartao focado
@@ -54,13 +62,14 @@ function createNewCard(content){
         }
     })
 
-    function createCard(text){
+    function createCard(text, color){
         const card = document.createElement('article');
         article = article + 1;
         const positionCard = article;
         card.id = 'cartao_' + positionCard;
         card.classList.add('cartao');
         card.tabIndex = 0;
+        card.style.backgroundColor = color;
         createOptionColor(card, positionCard, text);
         
         return card;
