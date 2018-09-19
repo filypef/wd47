@@ -19,8 +19,8 @@
             createNewCard(textHelp[i].text, textHelp[i].color);
         }*/
 
-        textHelp.forEach(function(text){
-            createNewCard(text);
+        textHelp.forEach(function(objeto){
+            window.createNewCard(objeto)
         })
 
         /*for(const i in textHelp){
