@@ -1,8 +1,7 @@
 (function(){
     const form = document.querySelector('.formNovoCartao');
     const formContent = form.querySelector('textarea');
-    const article = document.querySelectorAll('.mural > article');
-    
+    let article = document.querySelectorAll('.mural > article').length;
     
     form.addEventListener('submit', function(e){
         e.preventDefault();
@@ -86,9 +85,10 @@
         })
     }
 
-    function createCard(text){        
+    function createCard(text){
         const card = document.createElement('article');
-        const positionCard = article.length + 1;
+        article = article + 1;
+        const positionCard = article;
         card.id = 'cartao_' + positionCard;
         card.classList.add('cartao');
         card.tabIndex = 0;
@@ -145,8 +145,6 @@
 
         return optionsCard;
     }
-
-    
 
     /*form.appendChild($span);
 
