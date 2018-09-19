@@ -9,7 +9,7 @@
         ];
 
         textHelp.forEach(function(text){
-            console.log(text);
+            createNewCard(text);
         })
 
         /*for(const i in textHelp){
