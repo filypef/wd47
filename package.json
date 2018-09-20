@@ -4,7 +4,8 @@
   "description": "Gerenciador do lembretes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel src --out-dir dist --copy-files --watch --preset env"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/filypef/wd47#readme",
   "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"
   }

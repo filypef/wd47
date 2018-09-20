@@ -7,7 +7,7 @@
         let card;
     
         if(typeof(objetoCard) === 'object'){
-            card  = createCard(objetoCard.text, objetoCard.color);
+            card  = createCard(objetoCard.conteudo, objetoCard.cor);
         }else{
             card  = createCard(objetoCard, 'yellow');
         }
